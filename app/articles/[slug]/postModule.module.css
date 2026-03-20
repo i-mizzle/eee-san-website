@@ -1,0 +1,116 @@
+.article {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-top: 7.5rem;
+}
+
+.notFound {
+  max-width: 56rem;
+  margin: 0 auto;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
+
+.notFoundContent {
+  text-align: center;
+}
+
+.notFoundTitle {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: rgb(220, 38, 38);
+}
+
+.notFoundMessage {
+  color: rgb(75, 85, 99);
+  margin-top: 0.5rem;
+}
+
+.categoriesContainer {
+  margin-top: 1rem;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: fit-content;
+}
+
+.categoryBadge {
+  padding: 0.625rem 1.25rem;
+  font-size: 1.125rem;
+  background-color: rgba(3, 190, 250, 0.2);
+  color: black;
+  border-radius: 9999px;
+  transition: background-color 0.2s ease;
+}
+
+.categoryBadge:hover {
+  background-color: rgba(3, 190, 250, 0.3);
+}
+
+.postTitle {
+  margin-top: 2rem;
+  font-weight: bold;
+  font-family: "Outfit", sans-serif;
+  font-size: 2.625rem;
+  line-height: 1.25;
+  text-align: center;
+}
+
+.postContent {
+  margin-top: 1.5rem;
+  color: #414042;
+}
+
+/* strong {
+    font-weight: 500;
+} */
+
+.postContent h2 {
+  font-size: 1.875rem;
+  font-weight: bold;
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.postContent h3 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-top: 1.25rem;
+  margin-bottom: 0.75rem;
+}
+
+.postContent p {
+  line-height: 1.75;
+  margin-bottom: 1rem;
+}
+
+.postContent a {
+  color: #851724;
+  text-decoration: underline;
+}
+
+.postContent a:hover {
+  color: rgb(2, 132, 199);
+}
+
+.postContent ul,
+.postContent ol {
+  margin-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+.postContent li {
+  margin-bottom: 0.5rem;
+  line-height: 1.75;
+}
+
+/* Hide embedded WordPress meta blocks inside post content */
+.postContent :global(.wp-block-post-author),
+.postContent :global(.rt-reading-time),
+.postContent :global(.reading-time),
+.postContent :global(.wp-block-post-time-to-read),
+.postContent :global(.wp-block-read-more) {
+  display: none !important;
+}

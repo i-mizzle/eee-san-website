@@ -1,26 +1,23 @@
+@import "animate.css";
+@import "aos/dist/aos.css";
 @import "tailwindcss";
-
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
-}
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+  --color-eee-black: #060c0e;
+  --color-eee-dark-gray: #49585a;
+  --color-eee-red: #851724;
+  --color-eee-light-gray: #e0e1dd;
+  --color-eee-white: #faf7f7;
+  --font-google-sans: var(--font-google-sans-loaded);
+  --font-outfit: var(--font-outfit-loaded);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  @apply bg-eee-white text-eee-black font-outfit;
+}
+
+html {
+  scroll-behavior: smooth;
 }
